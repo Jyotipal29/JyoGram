@@ -1,0 +1,48 @@
+.login-form{
+    max-width: 500px;
+    margin:0 auto;
+    background-color: white;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-heading{
+    font-size:30px;
+    text-align: center;
+}
+.login-form-control{
+    padding: 0px 20px;
+}
+.login-form-control small{
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+.login-input{
+    display: block;
+    width:100%;
+    padding:10px;
+}
+
+
+.login-btn{
+   display: block;
+   width:100%;
+   padding:8px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+background-color: rgb(83, 83, 240);
+
+}
+ .login-switch{
+    display: block;
+   width:100%;
+   border:none;
+   cursor: pointer;
+   color:rgb(83, 83, 240);
+ }
+
+.btn-clear{
+    background-color: rgb(80, 80, 110);
+}

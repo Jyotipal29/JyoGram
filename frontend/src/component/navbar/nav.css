@@ -1,0 +1,9 @@
+.nav-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(98, 98, 148);
+}
+.nav-login{
+    margin-left:20px;
+    font-size: 20px;
+}

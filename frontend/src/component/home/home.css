@@ -1,0 +1,29 @@
+.home-container{
+    
+    max-width: 1100px;
+    margin:0 auto;
+    background-color: #eee;
+}
+.home-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding:10px 0px;
+    color:black;
+}
+.home-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:10px;
+}
+.home-form-wrapper{
+flex-basis:30%;
+margin:10px;
+}
+.home-post-wrapper{
+flex-basis:70%;
+margin:10px;
+
+
+}
