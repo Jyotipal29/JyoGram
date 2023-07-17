@@ -13,6 +13,7 @@ const Navbar = () => {
           Memories
         </Link>
       </div>
+
       <div className="nav-login">
         <Link to="/login" style={{ color: "inherit", textDecoration: "none" }}>
           login
