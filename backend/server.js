@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 
 const PORT = 5500;
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send({ message: "im working" });
 });
 
