@@ -26,7 +26,7 @@ app.post('/token', (req, res)=>{
   const name = "jyotipaljyotipal";
   const token = Array.from({ length: 10 }, () => name[Math.floor(Math.random() * name.length)]).join("");
   
-    res.status(200).send(token);
+    res.status(200).json({"tok":token});
 })
 
 app.listen(PORT, () => console.log(`listening on ${PORT} port`));
