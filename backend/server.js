@@ -23,7 +23,10 @@ app.get("/", (req, res) => {
 });
 
 app.post('/token', (req, res)=>{
-    const token = Math.random(999999999999);
+  const name = "jyotipaljyotipal";
+  const token = Array.from({ length: 5 }, () => name[Math.floor(Math.random() * name.length)]).join("");
+  
     res.status(200).send(token);
 })
+
 app.listen(PORT, () => console.log(`listening on ${PORT} port`));
