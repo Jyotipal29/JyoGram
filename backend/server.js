@@ -21,4 +21,13 @@ const PORT = 5500;
 app.use("/", (req, res) => {
   res.send({ message: "im working" });
 });
+
+app.post('/token', (req, res)=>{
+  if(req.header('MY-API-KEY') && req.header('MY-API-KEY') === "3437534sdfasfSDF"){
+    const token = Math.random(999999999999);
+    res.status(200).send(token);
+  } else {
+    res.status(400).send('no-api-key')
+  }
+})
 app.listen(PORT, () => console.log(`listening on ${PORT} port`));
