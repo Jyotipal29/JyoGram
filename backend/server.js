@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 
 app.post('/token', (req, res)=>{
   const name = "jyotipaljyotipal";
-  const token = Array.from({ length: 5 }, () => name[Math.floor(Math.random() * name.length)]).join("");
+  const token = Array.from({ length: 10 }, () => name[Math.floor(Math.random() * name.length)]).join("");
   
     res.status(200).send(token);
 })
