@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.post('/token', (req, res)=>{
-  if(req.header('MY-API-KEY') && req.header('MY-API-KEY') === "3437534sdfasfSDF"){
+  if(req.headers('MY-API-KEY') && req.headers('MY-API-KEY') === "3437534sdfasfSDF"){
     const token = Math.random(999999999999);
     res.status(200).send(token);
   } else {
