@@ -23,11 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.post('/token', (req, res)=>{
-  if(req.headers['MY-API-KEY'] && req.headers['MY-API-KEY'] === "3437534sdfasfSDF"){
     const token = Math.random(999999999999);
     res.status(200).send(token);
-  } else {
-    res.status(400).send('no-api-key')
-  }
 })
 app.listen(PORT, () => console.log(`listening on ${PORT} port`));
