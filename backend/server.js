@@ -4,7 +4,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const postRoutes = require("./routes/posts");
 const userRoutes = require("./routes/user");
-connectDB();
+// connectDB();
 
 const app = express();
 app.use(cors());
@@ -13,8 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // routes
-app.use("/posts", postRoutes);
-app.use("/users", userRoutes);
+// app.use("/posts", postRoutes);
+// app.use("/users", userRoutes);
 
 const PORT = 5500;
 
